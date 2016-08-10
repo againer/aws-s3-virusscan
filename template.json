@@ -518,7 +518,7 @@
             },
             "files": {
               "/etc/rsyslog.d/s3-virusscan.conf": {
-                "content": ":programname, isequal, \"s3-virusscan\"   /var/log/s3-virusscan\n",
+                "content": ":programname, isequal, \"s3-virusscan\"   /var/log/s3-virusscan-test\n",
                 "mode": "000644",
                 "owner": "root",
                 "group": "root"
@@ -548,11 +548,11 @@
                       "log_group_name = /var/log/messages",
                       "\n",
                       "\n",
-                      "[/var/log/s3-virusscan]",
+                      "[/var/log/s3-virusscan-test]",
                       "\n",
                       "datetime_format = %b %d %H:%M:%S",
                       "\n",
-                      "file = /var/log/s3-virusscan",
+                      "file = /var/log/s3-virusscan-test",
                       "\n",
                       "buffer_duration = 5000",
                       "\n",
@@ -560,7 +560,7 @@
                       "\n",
                       "initial_position = start_of_file",
                       "\n",
-                      "log_group_name = /var/log/s3-virusscan",
+                      "log_group_name = /var/log/s3-virusscan-test",
                       "\n",
                       "\n",
                       "[/var/log/secure]",
