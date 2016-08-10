@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'aws-sdk'
-require 'English'
 require 'json'
 require 'uri'
 require 'yaml'
